@@ -74,7 +74,7 @@ export const createSubscription = async (
     }
 
 
-     await Subscriptions.create({
+/*     await Subscriptions.create({
       companyId,
       isActive: false,
       userPriceCents: users,
@@ -83,19 +83,19 @@ export const createSubscription = async (
       lastPlanChange: new Date(),
       providerSubscriptionId: pix.loc.id,
       expiresAt: new Date()
-    }); 
+    }); */
 
-     const { id } = req.user;
+/*     const { id } = req.user;
     const userData = {};
     const userId = id;
     const requestUserId = parseInt(id);
-    const user = await UpdateUserService({ userData, userId, companyId, requestUserId }); 
+    const user = await UpdateUserService({ userData, userId, companyId, requestUserId }); */
 
-         const io = getIO();
+    /*     const io = getIO();
         io.emit("user", {
           action: "update",
           user
-        }); 
+        }); */
 
 
     return res.json({
